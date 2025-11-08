@@ -37,9 +37,9 @@ fileInput.addEventListener('change', (e) => {
     const file = e.target.files.length > 0 ? e.target.files[0] : null;
     if (file) {
         const reader = new FileReader();
-        reader.onload = function (event) {
+        reader.onload = function (e) {
             const logo = document.createElement('img');
-            logo.src = event.target.result;
+            logo.src = e.target.result;
             logo.alt = file.name;
             logo.id = "custom-logo";
             filePickerText.innerText = file.name;

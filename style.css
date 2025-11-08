@@ -52,10 +52,12 @@ body {
 
 #custom-logo {
     position: absolute;
-    left: calc(50% - 2.25rem);
-    bottom: 1rem;
-    width: 4.5rem;
-    height: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1.5rem;
+    width: auto;
+    max-height:1.5rem;
+    display: block;
 }
 
 .image-container .spinner {
@@ -128,7 +130,7 @@ body {
     font-size: 0.9rem;
 }
 
-.file-picker-main{
+.file-picker-main {
     width: 100%;
     padding: 0 0.7rem;
     background-color: var(--pink);
@@ -138,27 +140,28 @@ body {
     height: 2.5rem;
     border-radius: 0.2rem;
     margin: 1rem 0;
-    color:white;
+    color: white;
 }
-.file-picker-main label{
+
+.file-picker-main label {
     cursor: pointer;
 }
-.file-picker-main img{
+
+.file-picker-main img {
     height: 1.2rem;
     stroke: white;
 }
-.file-picker-main .file-picker-text{
-    color:white;
+
+.file-picker-main .file-picker-text {
+    color: white;
     margin: auto 0;
 }
 
-.delete-icon{
+.delete-icon {
     visibility: hidden;
 }
 
-footer{
-   padding-bottom: 1rem;
-   text-align: center;
+footer {
+    padding-bottom: 1rem;
+    text-align: center;
 }
-
- 
