@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umbrella Customizer - Revise</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <main class="main-container">
+        <div class="image-container" id="image-container">
+            <img id="umbrella-img" class="umbrella-img" src="./assets/Pink umbrella.png" alt="">
+        </div>
+        <div class="swatch-control-parent">
+            <h1>Custom Umbrella</h1>
+            <div id="swatch-colors" class="swatch-colors">
+            </div>
+            <div class="swatch-control-text">
+                <h2>Customize your umbrella</h2>
+                <p>Upload a logo for an instant preview.</p>
+                <span>.png and .jpg files only. Max file size is 5MB.</span>
+                <div class="file-picker-main" id="file-picker-main">
+                    <label for="hidden-file-input"><img src="./assets/upload_icon.svg" alt="upload" /></label>
+                    <p class="file-picker-text" id="file-picker-text">UPLOAD LOGO</p>
+                    <i id="delete-icon" class="fa-solid fa-x delete-icon"></i>
+                </div>
+                <input id="hidden-file-input" style="display: none;" name="file-picker-input"
+                    accept="image/png, image/jpeg" type="file" />
+            </div>
+    </main>
+    <script src="./index.js" type="module"></script>
+</body>
+<footer>
+    Built by <a href="https://github.com/Suman373">Suman R.</a>
+</footer>
+</html>

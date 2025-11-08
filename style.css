@@ -1,0 +1,164 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pink: #D62885;
+    --blue: #28B0E4;
+    --yellow: #FFD148;
+
+    --pink-light: #ffe2f2;
+    --blue-light: #E4F5FD;
+    --yellow-light: #FFFAEC;
+
+    --height: 20rem;
+    --width: 23rem;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-content: center;
+    font-family: "Roboto", sans-serif;
+    grid-template-rows: 1fr auto;
+    background-color: var(--pink-light);
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.image-container {
+    display: grid;
+    height: var(--height);
+    width: var(--width);
+    place-content: center;
+    position: relative;
+}
+
+.image-container .umbrella-img {
+    height: var(--height);
+    width: var(--width);
+}
+
+#custom-logo {
+    position: absolute;
+    left: calc(50% - 2.25rem);
+    bottom: 1rem;
+    width: 4.5rem;
+    height: fit-content;
+}
+
+.image-container .spinner {
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    left: calc(50% - 2rem);
+    top: calc(50% - 2rem);
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+.swatch-control-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.swatch-colors {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+}
+
+.color-picker {
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#blue {
+    background-color: var(--blue);
+}
+
+#pink {
+    background-color: var(--pink);
+}
+
+#yellow {
+    background-color: var(--yellow);
+}
+
+.swatch-control-text h2 {
+    color: rgb(33, 33, 37);
+    font-size: 1.2rem;
+    margin: 0.2rem 0;
+}
+
+.swatch-control-text p {
+    color: rgb(57, 57, 64);
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+.swatch-control-text span {
+    color: rgb(57, 57, 64);
+    font-size: 0.9rem;
+}
+
+.file-picker-main{
+    width: 100%;
+    padding: 0 0.7rem;
+    background-color: var(--pink);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 2.5rem;
+    border-radius: 0.2rem;
+    margin: 1rem 0;
+    color:white;
+}
+.file-picker-main label{
+    cursor: pointer;
+}
+.file-picker-main img{
+    height: 1.2rem;
+    stroke: white;
+}
+.file-picker-main .file-picker-text{
+    color:white;
+    margin: auto 0;
+}
+
+.delete-icon{
+    visibility: hidden;
+}
+
+footer{
+   padding-bottom: 1rem;
+   text-align: center;
+}
+
+ 
