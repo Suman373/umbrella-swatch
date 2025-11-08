@@ -56,7 +56,7 @@ body {
     transform: translateX(-50%);
     bottom: 1.5rem;
     width: auto;
-    max-height:1.5rem;
+    max-height: 1.5rem;
     display: block;
 }
 
@@ -143,10 +143,6 @@ body {
     color: white;
 }
 
-.file-picker-main label {
-    cursor: pointer;
-}
-
 .file-picker-main img {
     height: 1.2rem;
     stroke: white;
@@ -155,6 +151,10 @@ body {
 .file-picker-main .file-picker-text {
     color: white;
     margin: auto 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 80%;
 }
 
 .delete-icon {
